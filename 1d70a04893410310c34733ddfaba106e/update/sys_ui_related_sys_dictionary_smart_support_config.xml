@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_related sys_domain="global" table="sys_dictionary" version="2" view="smart_support_config">
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <group_by_field/>
+            <list_id display_value="Dictionary Entry - Smart_support_config" name="sys_dictionary" related_list="NULL" sys_domain="global" view="60ae784493450310c34733ddfaba10ce">350ff88493450310c34733ddfaba1054</list_id>
+            <order_by/>
+            <position>0</position>
+            <related_list>REL:a403d812eb321100d4360c505206fe52</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-05-19 10:50:27</sys_created_on>
+            <sys_id>390ff88493450310c34733ddfaba1055</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-05-19 10:50:27</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <group_by_field/>
+            <list_id display_value="Dictionary Entry - Smart_support_config" name="sys_dictionary" related_list="NULL" sys_domain="global" view="60ae784493450310c34733ddfaba10ce">350ff88493450310c34733ddfaba1054</list_id>
+            <order_by/>
+            <position>1</position>
+            <related_list>REL:9355cd9b0a000704053ea63b163e74b9</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-05-19 10:50:27</sys_created_on>
+            <sys_id>bd0ff88493450310c34733ddfaba1055</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-05-19 10:50:27</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <group_by_field/>
+            <list_id display_value="Dictionary Entry - Smart_support_config" name="sys_dictionary" related_list="NULL" sys_domain="global" view="60ae784493450310c34733ddfaba10ce">350ff88493450310c34733ddfaba1054</list_id>
+            <order_by/>
+            <position>2</position>
+            <related_list>sys_schema_attribute_m2m.schema</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-05-19 10:50:27</sys_created_on>
+            <sys_id>350ff88493450310c34733ddfaba1056</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-05-19 10:50:27</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <group_by_field/>
+            <list_id display_value="Dictionary Entry - Smart_support_config" name="sys_dictionary" related_list="NULL" sys_domain="global" view="60ae784493450310c34733ddfaba10ce">350ff88493450310c34733ddfaba1054</list_id>
+            <order_by/>
+            <position>3</position>
+            <related_list>REL:936d24940a0007040df60be53657a3db</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-05-19 10:50:27</sys_created_on>
+            <sys_id>b90ff88493450310c34733ddfaba1056</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-05-19 10:50:27</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <group_by_field/>
+            <list_id display_value="Dictionary Entry - Smart_support_config" name="sys_dictionary" related_list="NULL" sys_domain="global" view="60ae784493450310c34733ddfaba10ce">350ff88493450310c34733ddfaba1054</list_id>
+            <order_by/>
+            <position>4</position>
+            <related_list>REL:aa6e720d0a0a0b8c000f785922ec5f96</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-05-19 10:50:27</sys_created_on>
+            <sys_id>310ff88493450310c34733ddfaba1057</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-05-19 10:50:27</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <group_by_field/>
+            <list_id display_value="Dictionary Entry - Smart_support_config" name="sys_dictionary" related_list="NULL" sys_domain="global" view="60ae784493450310c34733ddfaba10ce">350ff88493450310c34733ddfaba1054</list_id>
+            <order_by/>
+            <position>5</position>
+            <related_list>sys_index.index_col_name</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-05-19 10:50:27</sys_created_on>
+            <sys_id>b50ff88493450310c34733ddfaba1057</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-05-19 10:50:27</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list action="INSERT_OR_UPDATE">
+            <calculated_name>Dictionary Entry - Smart_support_config</calculated_name>
+            <filter/>
+            <name>sys_dictionary</name>
+            <order_by/>
+            <position/>
+            <related_list/>
+            <sys_class_name>sys_ui_related_list</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-05-19 10:50:27</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>350ff88493450310c34733ddfaba1054</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Dictionary Entry - Smart_support_config</sys_name>
+            <sys_package display_value="Smart Support" source="x_1558402_smart_0">1d70a04893410310c34733ddfaba106e</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Smart Support">1d70a04893410310c34733ddfaba106e</sys_scope>
+            <sys_update_name>sys_ui_related_sys_dictionary_smart_support_config</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-05-19 10:50:27</sys_updated_on>
+            <sys_user/>
+            <view display_value="Smart_support_config" name="smart_support_config">60ae784493450310c34733ddfaba10ce</view>
+            <view_name/>
+        </sys_ui_related_list>
+    </sys_ui_related>
+</record_update>

@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_operation">
+    <sys_ws_operation action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <consumes>application/json,application/xml,text/xml</consumes>
+        <consumes_customized>false</consumes_customized>
+        <default_operation_uri/>
+        <enforce_acl/>
+        <http_method>POST</http_method>
+        <name>Create Event</name>
+        <operation_script><![CDATA[(function process(request, response) {
+
+    var body = {};
+
+    try {
+
+        // ✅ 1. Handle payload
+        var requestBody = request.body.data || request.body;
+        body = requestBody.payload || requestBody;
+
+        if (typeof body === 'string') {
+            body = JSON.parse(body);
+        }
+
+        gs.info("Parsed Payload: " + JSON.stringify(body));
+
+        // ✅ ✅ ✅ FIXED HELPER FUNCTION
+        function updateTracker(body, status, errorMsg) {
+
+    if (!body.event_id) return;
+
+    var tr = new GlideRecord('x_1558402_smart_0_request_tracker');
+    tr.addQuery('event_id', body.event_id);
+    tr.query();
+
+    if (tr.next()) {
+
+        var currentCount = tr.retry_count || 0;
+
+        // ✅ Increment only if < 3
+        if (currentCount < 3) {
+            tr.retry_count = currentCount + 1;
+        }
+
+        // ✅ ✅ NEW LOGIC (Your Requirement)
+        if (tr.retry_count == 1) {
+            tr.status = 'Pending';
+        } else {
+            tr.status = status;
+        }
+
+        tr.last_error = errorMsg;
+
+        // ✅ Permanent failure after 3
+        if (currentCount >= 3) {
+            tr.status = 'Failed Permanent';
+        }
+
+        tr.update();
+
+    } else {
+
+        // ✅ First-time insert (retry_count = 1 → Pending ✅)
+        tr.initialize();
+        tr.event_id = body.event_id;
+        tr.payload = JSON.stringify(body);
+        tr.retry_count = 1;
+
+        // ✅ ✅ NEW LOGIC HERE ALSO
+        tr.status = 'Pending';
+
+        tr.last_error = errorMsg;
+        tr.source = 'REST API';
+        tr.insert();
+    }
+}
+        // ✅ 2. Validate payload
+        if (!body.event_id || !body.asset_serial) {
+
+            updateTracker(body, 'Failed', 'Missing required fields');
+
+            response.setStatus(400);
+            response.setBody({ message: "Invalid payload" });
+            return;
+        }
+
+        // ✅ 3. Fetch Asset
+        var assetGR = new GlideRecord('x_1558402_smart_0_asset_table');
+        assetGR.addQuery('serial_number', body.asset_serial);
+        assetGR.query();
+
+        if (!assetGR.next()) {
+
+            updateTracker(body, 'Failed', 'Invalid asset_serial');
+
+            response.setStatus(400);
+            response.setBody({ message: "Asset not found" });
+            return;
+        }
+
+        // ✅ 4. Duplicate Check
+        var existing = new GlideRecord('x_1558402_smart_0_external_event_id');
+        existing.addQuery('event_id', body.event_id);
+        existing.query();
+
+        if (existing.next()) {
+
+            updateTracker(body, 'Duplicate', 'Duplicate event_id received');
+
+            response.setStatus(200);
+            response.setBody({ message: "Duplicate event" });
+            return;
+        }
+
+        // ✅ 5. Create Event Log
+        var eventGR = new GlideRecord('x_1558402_smart_0_external_event_id');
+        eventGR.initialize();
+
+        eventGR.setValue('event_id', body.event_id);
+        eventGR.setValue('description', body.description);
+        eventGR.setValue('priority', body.severity);
+        eventGR.setValue('asset_serial_number', body.asset_serial);
+
+        eventGR.setValue('asset', assetGR.sys_id);
+        eventGR.setValue('asset_name', assetGR.name);
+        eventGR.setValue('customer', assetGR.customer);
+
+        eventGR.setValue('payload', JSON.stringify(body));
+        eventGR.setValue('status', 'Pending');
+        eventGR.setValue('source_system', 'REST_API');
+        eventGR.setValue('state', 'new');
+
+        var eventSysId = eventGR.insert();
+
+        if (!eventSysId) {
+
+            updateTracker(body, 'Failed', 'Event log insert failed');
+
+            response.setStatus(500);
+            response.setBody({ message: "Insert failed" });
+            return;
+        }
+
+        // ✅ 6. Create Case
+        var processor = new CaseProcessor();
+        var result = processor.createCaseFromEvent(body);
+
+        if (result && result.indexOf("Case Created") >= 0) {
+            eventGR.setValue('status', 'Processed');
+            updateTracker(body, 'Processed', '');
+        } else {
+            eventGR.setValue('status', 'Failed');
+            updateTracker(body, 'Failed', result);
+        }
+
+        eventGR.update();
+
+        response.setStatus(200);
+        response.setBody({
+            message: result,
+            event_sys_id: eventSysId
+        });
+
+    } catch (e) {
+
+        updateTracker(body, 'Failed', e.message);
+
+        gs.error("[ERROR] API: " + e.message);
+
+        response.setStatus(500);
+        response.setBody({
+            message: "Internal Server Error"
+        });
+    }
+
+})(request, response);]]></operation_script>
+        <operation_uri>/api/x_1558402_smart_0/smartsupport_api/event</operation_uri>
+        <produces>application/json,application/xml,text/xml</produces>
+        <produces_customized>false</produces_customized>
+        <relative_path>/event</relative_path>
+        <request_example/>
+        <requires_acl_authorization>true</requires_acl_authorization>
+        <requires_authentication>true</requires_authentication>
+        <requires_snc_internal_role>true</requires_snc_internal_role>
+        <short_description/>
+        <support_trailing_slash>false</support_trailing_slash>
+        <sys_class_name>sys_ws_operation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-25 07:19:14</sys_created_on>
+        <sys_id>d8470fbd930dcf10c34733ddfaba109d</sys_id>
+        <sys_mod_count>61</sys_mod_count>
+        <sys_name>Create Event</sys_name>
+        <sys_package display_value="Smart Support" source="x_1558402_smart_0">1d70a04893410310c34733ddfaba106e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Smart Support">1d70a04893410310c34733ddfaba106e</sys_scope>
+        <sys_update_name>sys_ws_operation_d8470fbd930dcf10c34733ddfaba109d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-24 14:57:28</sys_updated_on>
+        <web_service_definition display_value="SmartSupport API">0b544ff5930dcf10c34733ddfaba104d</web_service_definition>
+        <web_service_version/>
+    </sys_ws_operation>
+</record_update>

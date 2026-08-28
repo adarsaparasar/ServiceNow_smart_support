@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_1558402_smart_0.CaseProcessor</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>CaseProcessor</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var CaseProcessor = Class.create();
+CaseProcessor.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+
+    // ✅ 1. VALIDATE EVENT PAYLOAD
+    validateEvent: function(payload) {
+
+        if (!payload) return false;
+
+        if (!payload.event_id || !payload.asset_serial) {
+            gs.info("Validation failed: Missing required fields");
+            return false;
+        }
+
+        return true;
+    },
+
+    // ✅ 3. CREATE CASE FROM EVENT (MAIN METHOD)
+    createCaseFromEvent: function(payload) {
+
+        try {
+
+            // ✅ Step 1: Validate payload
+            if (!this.validateEvent(payload)) {
+                return "Invalid payload";
+            }
+
+            // ✅ Step 2: Fetch Asset using serial_number
+            var assetGR = new GlideRecord('x_1558402_smart_0_asset_table');
+            assetGR.addQuery('serial_number', payload.asset_serial);
+            assetGR.query();
+
+            if (!assetGR.next()) {
+                return "Asset not found";
+            }
+
+            // ✅ Step 3: Get Customer from Asset
+            var customer = assetGR.customer;
+
+            // ✅ Step 4: Create Case record
+            var caseGR = new GlideRecord('x_1558402_smart_0_case_table');
+            caseGR.initialize();
+
+            // ]]>🔹<![CDATA[ Populate from payload
+            caseGR.setValue('description', payload.description);
+            caseGR.setValue('external_event_id', payload.event_id);
+
+            // ]]>🔹<![CDATA[ Derived values
+            caseGR.setValue('asset', assetGR.sys_id);
+            caseGR.setValue('customer', customer);
+
+            // ]]>🔹<![CDATA[ Priority mapping
+			// gs.info("SEVERITY VALUE RECEIVED IS : " + payload.severity);
+            // if (payload.severity) {
+            //     caseGR.setValue('priority', payload.severity);
+            // } else {
+            //     caseGR.setValue('priority', 'medium');
+            // }
+
+            // ]]>🔹<![CDATA[ Default values
+            caseGR.setValue('state', 'new');
+
+            var caseSysId = caseGR.insert();
+
+            if (!caseSysId) {
+                return "Case creation failed";
+            }
+
+            return "Case Created: " + caseSysId;
+
+        } catch (e) {
+            gs.error("Error in createCaseFromEvent: " + e.message);
+            return "Error creating case";
+        }
+    },
+
+    // ✅ 4. FETCH CUSTOMER FROM ASSET (GLIDEAJAX)
+    getCustomerFromAsset: function() {
+
+        var assetId = this.getParameter('sysparm_asset_id');
+        var assetGR = new GlideRecord('x_1558402_smart_0_asset_table');
+
+        if (assetGR.get(assetId)) {
+            return assetGR.customer.toString();
+        }
+
+        return '';
+    },
+
+    // ✅ 5. GET ASSET STATUS (GLIDEAJAX)
+    getAssetStatus: function() {
+
+        var assetId = this.getParameter('sysparm_asset_id');
+        var assetGR = new GlideRecord('x_1558402_smart_0_asset_table');
+
+        if (assetGR.get(assetId)) {
+            return assetGR.status.toString();
+        }
+
+        return '';
+    },
+
+    type: 'CaseProcessor'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-21 20:09:57</sys_created_on>
+        <sys_id>ef5051f093c98710c34733ddfaba10a3</sys_id>
+        <sys_mod_count>20</sys_mod_count>
+        <sys_name>CaseProcessor</sys_name>
+        <sys_package display_value="Smart Support" source="x_1558402_smart_0">1d70a04893410310c34733ddfaba106e</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Smart Support">1d70a04893410310c34733ddfaba106e</sys_scope>
+        <sys_update_name>sys_script_include_ef5051f093c98710c34733ddfaba10a3</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-18 08:37:57</sys_updated_on>
+    </sys_script_include>
+</record_update>

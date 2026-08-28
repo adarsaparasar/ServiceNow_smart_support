@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_operation">
+    <sys_ws_operation action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <consumes>application/json,application/xml,text/xml</consumes>
+        <consumes_customized>false</consumes_customized>
+        <default_operation_uri/>
+        <enforce_acl/>
+        <http_method>POST</http_method>
+        <name>applicationIntegration</name>
+        <operation_script><![CDATA[(function process(/*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
+
+    // implement resource here
+	var body = request.body.data;
+
+    // Validate
+    if (!body.event_id) {
+        response.setStatus(400);
+        return { message: "Invalid payload" };
+    }
+    var assetGR = new GlideRecord('x_1558402_smart_0_asset_table');
+    assetGR.addQuery('serial_number', body.asset_serial);
+    assetGR.query();
+
+    if (!assetGR.next()) {
+    response.setStatus(400);
+    return {
+        message: "Invalid asset_serial. Asset not found."
+    };
+}
+
+    // Insert Event Log
+    var gr = new GlideRecord('x_1558402_smart_0_external_event_id');
+    gr.initialize();
+	if (gr.next()) {
+    // Already exists → skip
+    return {
+        message: "Duplicate event ignored",
+    };
+}
+   
+    gr.event_id = body.event_id;
+    gr.payload = JSON.stringify(body);
+    gr.status = 'Received';
+   
+    gr.asset_serial_number = body.asset_serial;
+    gr.description = body.description;
+    gr.severity = body.severity;
+	gr.source_system = "REST_API";
+    
+    gr.addQuery('event_id', body.event_id);
+    gr.query();
+
+  
+
+
+    var id = gr.insert();  
+
+    var processor = new CaseProcessor();
+    var result = processor.createCaseFromEvent(body);
+	
+    response.setBody({
+        message: result
+    });
+
+    return {
+        message: "Event created",
+        sys_id: id,
+		
+    };
+
+
+})(request, response);]]></operation_script>
+        <operation_uri>/api/x_1558402_smart_0/applicationintegration/event</operation_uri>
+        <produces>application/json,application/xml,text/xml</produces>
+        <produces_customized>false</produces_customized>
+        <relative_path>/event</relative_path>
+        <request_example/>
+        <requires_acl_authorization>true</requires_acl_authorization>
+        <requires_authentication>true</requires_authentication>
+        <requires_snc_internal_role>true</requires_snc_internal_role>
+        <short_description/>
+        <support_trailing_slash>false</support_trailing_slash>
+        <sys_class_name>sys_ws_operation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-02 08:23:32</sys_created_on>
+        <sys_id>613320a093154790c34733ddfaba1001</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>applicationIntegration</sys_name>
+        <sys_package display_value="Smart Support" source="x_1558402_smart_0">1d70a04893410310c34733ddfaba106e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Smart Support">1d70a04893410310c34733ddfaba106e</sys_scope>
+        <sys_update_name>sys_ws_operation_613320a093154790c34733ddfaba1001</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-24 04:55:39</sys_updated_on>
+        <web_service_definition display_value="applicationintegration">83c26c2093154790c34733ddfaba10df</web_service_definition>
+        <web_service_version/>
+    </sys_ws_operation>
+</record_update>

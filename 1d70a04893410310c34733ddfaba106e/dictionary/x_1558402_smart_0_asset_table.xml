@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="91f0b88893c10310c34733ddfaba101a" label="Asset Table" max_length="40" name="x_1558402_smart_0_asset_table" type="collection">
+        <element label="Customer" mandatory="true" max_length="32" name="customer" reference="x_1558402_smart_0_supportcustomer" type="reference"/>
+        <element label="Name" mandatory="true" max_length="40" name="name" type="string"/>
+        <element label="Serial Number" mandatory="true" max_length="40" name="serial_number" type="string" unique="true" use_dynamic_default="true"/>
+        <element choice="3" label="Status" max_length="40" name="status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Inactive" sequence="1" value="inactive"/>
+                <element inactive_on_update="false" label="Active" sequence="0" value="active"/>
+                <element inactive_on_update="false" label="Default Active" sequence="3" value="default_active"/>
+                <element inactive_on_update="false" label="Faulty" sequence="2" value="faulty"/>
+            </choice>
+        </element>
+        <index name="index">
+            <element name="customer"/>
+        </index>
+        <index name="index2" unique="true">
+            <element name="serial_number"/>
+        </index>
+    </element>
+</database>

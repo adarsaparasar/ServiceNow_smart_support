@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="Reference Specification" section_id="bec9b40c93050310c34733ddfaba1036" sys_domain="global" table="sys_dictionary" version="3" view="Advanced">
+        <sys_ui_annotation action="INSERT_OR_UPDATE">
+            <is_plain_text>false</is_plain_text>
+            <name/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-05-19 10:28:12</sys_created_on>
+            <sys_id>bfe9f80c93050310c34733ddfaba10ee</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-05-19 10:28:12</sys_updated_on>
+            <text>Dictionary Form Reference Section Description</text>
+            <type display_value="Section Details">19756e5ec3313000bac1addbdfba8f18</type>
+        </sys_ui_annotation>
+        <sys_ui_annotation action="INSERT_OR_UPDATE">
+            <is_plain_text>false</is_plain_text>
+            <name/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-05-19 10:28:12</sys_created_on>
+            <sys_id>f3e9f80c93050310c34733ddfaba10ef</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-05-19 10:28:12</sys_updated_on>
+            <text>Reference Specification - Additional Customization</text>
+            <type display_value="Section Separator">443e806c0fd30000b12e6903cfe01281</type>
+        </sys_ui_annotation>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>bfe9f80c93050310c34733ddfaba10ee</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-05-19 10:28:12</sys_created_on>
+            <sys_id>3be93c0c93050310c34733ddfaba1000</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Reference Specification" display_value="Reference Specification" name="sys_dictionary" sys_domain="global" view="7966be310a0a0b8c00bd504090503227">bec9b40c93050310c34733ddfaba1036</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-05-19 10:28:12</sys_updated_on>
+            <sys_user/>
+            <type>annotation</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>reference</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-05-19 10:28:12</sys_created_on>
+            <sys_id>f3e93c0c93050310c34733ddfaba1001</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Reference Specification" display_value="Reference Specification" name="sys_dictionary" sys_domain="global" view="7966be310a0a0b8c00bd504090503227">bec9b40c93050310c34733ddfaba1036</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-05-19 10:28:12</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>use_reference_qualifier</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-05-19 10:28:12</sys_created_on>
+            <sys_id>bfe93c0c93050310c34733ddfaba1001</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Reference Specification" display_value="Reference Specification" name="sys_dictionary" sys_domain="global" view="7966be310a0a0b8c00bd504090503227">bec9b40c93050310c34733ddfaba1036</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-05-19 10:28:12</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>reference_qual_condition</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-05-19 10:28:12</sys_created_on>
+            <sys_id>7be93c0c93050310c34733ddfaba1002</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Reference Specification" display_value="Reference Specification" name="sys_dictionary" sys_domain="global" view="7966be310a0a0b8c00bd504090503227">bec9b40c93050310c34733ddfaba1036</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-05-19 10:28:12</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>dynamic_ref_qual</element>
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-05-19 10:28:12</sys_created_on>
+            <sys_id>37e93c0c93050310c34733ddfaba1003</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Reference Specification" display_value="Reference Specification" name="sys_dictionary" sys_domain="global" view="7966be310a0a0b8c00bd504090503227">bec9b40c93050310c34733ddfaba1036</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-05-19 10:28:12</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>reference_qual</element>
+            <position>5</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-05-19 10:28:12</sys_created_on>
+            <sys_id>ffe93c0c93050310c34733ddfaba1003</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Reference Specification" display_value="Reference Specification" name="sys_dictionary" sys_domain="global" view="7966be310a0a0b8c00bd504090503227">bec9b40c93050310c34733ddfaba1036</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-05-19 10:28:12</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>f3e9f80c93050310c34733ddfaba10ef</element>
+            <position>6</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-05-19 10:28:12</sys_created_on>
+            <sys_id>bbe93c0c93050310c34733ddfaba1004</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Reference Specification" display_value="Reference Specification" name="sys_dictionary" sys_domain="global" view="7966be310a0a0b8c00bd504090503227">bec9b40c93050310c34733ddfaba1036</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-05-19 10:28:12</sys_updated_on>
+            <sys_user/>
+            <type>annotation</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.begin_split</element>
+            <position>7</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-05-19 10:28:12</sys_created_on>
+            <sys_id>77e93c0c93050310c34733ddfaba1005</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Reference Specification" display_value="Reference Specification" name="sys_dictionary" sys_domain="global" view="7966be310a0a0b8c00bd504090503227">bec9b40c93050310c34733ddfaba1036</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-05-19 10:28:12</sys_updated_on>
+            <sys_user/>
+            <type>.begin_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>reference_key</element>
+            <position>8</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-05-19 10:28:12</sys_created_on>
+            <sys_id>33e93c0c93050310c34733ddfaba1006</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Reference Specification" display_value="Reference Specification" name="sys_dictionary" sys_domain="global" view="7966be310a0a0b8c00bd504090503227">bec9b40c93050310c34733ddfaba1036</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-05-19 10:28:12</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>reference_cascade_rule</element>
+            <position>9</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-05-19 10:28:12</sys_created_on>
+            <sys_id>fbe93c0c93050310c34733ddfaba1006</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Reference Specification" display_value="Reference Specification" name="sys_dictionary" sys_domain="global" view="7966be310a0a0b8c00bd504090503227">bec9b40c93050310c34733ddfaba1036</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-05-19 10:28:12</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>10</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-05-19 10:28:12</sys_created_on>
+            <sys_id>b7e93c0c93050310c34733ddfaba1007</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Reference Specification" display_value="Reference Specification" name="sys_dictionary" sys_domain="global" view="7966be310a0a0b8c00bd504090503227">bec9b40c93050310c34733ddfaba1036</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-05-19 10:28:12</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>reference_floats</element>
+            <position>11</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-05-19 10:28:12</sys_created_on>
+            <sys_id>73e93c0c93050310c34733ddfaba1008</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Reference Specification" display_value="Reference Specification" name="sys_dictionary" sys_domain="global" view="7966be310a0a0b8c00bd504090503227">bec9b40c93050310c34733ddfaba1036</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-05-19 10:28:12</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>dynamic_creation</element>
+            <position>12</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-05-19 10:28:12</sys_created_on>
+            <sys_id>3fe93c0c93050310c34733ddfaba1008</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Reference Specification" display_value="Reference Specification" name="sys_dictionary" sys_domain="global" view="7966be310a0a0b8c00bd504090503227">bec9b40c93050310c34733ddfaba1036</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-05-19 10:28:12</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>13</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-05-19 10:28:12</sys_created_on>
+            <sys_id>f7e93c0c93050310c34733ddfaba1009</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Reference Specification" display_value="Reference Specification" name="sys_dictionary" sys_domain="global" view="7966be310a0a0b8c00bd504090503227">bec9b40c93050310c34733ddfaba1036</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-05-19 10:28:12</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>dynamic_creation_script</element>
+            <position>14</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-05-19 10:28:12</sys_created_on>
+            <sys_id>b3e93c0c93050310c34733ddfaba100a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Reference Specification" display_value="Reference Specification" name="sys_dictionary" sys_domain="global" view="7966be310a0a0b8c00bd504090503227">bec9b40c93050310c34733ddfaba1036</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-05-19 10:28:12</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Reference Specification</caption>
+            <header>false</header>
+            <name>sys_dictionary</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-05-19 10:27:36</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>bec9b40c93050310c34733ddfaba1036</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>sys_dictionary</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Smart Support" source="x_1558402_smart_0">1d70a04893410310c34733ddfaba106e</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Smart Support">1d70a04893410310c34733ddfaba106e</sys_scope>
+            <sys_update_name>sys_ui_section_bec9b40c93050310c34733ddfaba1036</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-05-19 10:27:36</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Advanced" name="Advanced">7966be310a0a0b8c00bd504090503227</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

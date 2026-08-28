@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="Default Value" section_id="36c9b40c93050310c34733ddfaba1079" sys_domain="global" table="sys_dictionary" version="3" view="Advanced">
+        <sys_ui_annotation action="INSERT_OR_UPDATE">
+            <is_plain_text>false</is_plain_text>
+            <name/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-05-19 10:28:13</sys_created_on>
+            <sys_id>88f93c0c93050310c34733ddfaba1068</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-05-19 10:28:13</sys_updated_on>
+            <text>Dictionary Form Default Value Section Description</text>
+            <type display_value="Section Details">19756e5ec3313000bac1addbdfba8f18</type>
+        </sys_ui_annotation>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>88f93c0c93050310c34733ddfaba1068</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-05-19 10:28:13</sys_created_on>
+            <sys_id>4cf93c0c93050310c34733ddfaba106f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Default Value" display_value="Default Value" name="sys_dictionary" sys_domain="global" view="7966be310a0a0b8c00bd504090503227">36c9b40c93050310c34733ddfaba1079</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-05-19 10:28:13</sys_updated_on>
+            <sys_user/>
+            <type>annotation</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>use_dynamic_default</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-05-19 10:28:13</sys_created_on>
+            <sys_id>08f93c0c93050310c34733ddfaba1070</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Default Value" display_value="Default Value" name="sys_dictionary" sys_domain="global" view="7966be310a0a0b8c00bd504090503227">36c9b40c93050310c34733ddfaba1079</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-05-19 10:28:13</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>default_value</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-05-19 10:28:13</sys_created_on>
+            <sys_id>c0f93c0c93050310c34733ddfaba1071</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Default Value" display_value="Default Value" name="sys_dictionary" sys_domain="global" view="7966be310a0a0b8c00bd504090503227">36c9b40c93050310c34733ddfaba1079</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-05-19 10:28:13</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>dynamic_default_value</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-05-19 10:28:13</sys_created_on>
+            <sys_id>8cf93c0c93050310c34733ddfaba1071</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Default Value" display_value="Default Value" name="sys_dictionary" sys_domain="global" view="7966be310a0a0b8c00bd504090503227">36c9b40c93050310c34733ddfaba1079</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-05-19 10:28:13</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Default Value</caption>
+            <header>false</header>
+            <name>sys_dictionary</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-05-19 10:27:36</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>36c9b40c93050310c34733ddfaba1079</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>sys_dictionary</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Smart Support" source="x_1558402_smart_0">1d70a04893410310c34733ddfaba106e</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Smart Support">1d70a04893410310c34733ddfaba106e</sys_scope>
+            <sys_update_name>sys_ui_section_36c9b40c93050310c34733ddfaba1079</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-05-19 10:27:36</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Advanced" name="Advanced">7966be310a0a0b8c00bd504090503227</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

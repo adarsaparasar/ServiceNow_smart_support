@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="a801dd4893c50310c34733ddfaba103b" label="Case" max_length="40" name="x_1558402_smart_0_support_case" type="collection">
+        <element label="Assignment Group" mandatory="true" max_length="32" name="assignment_group" reference="sys_user_group" reference_qual="name=^EQ" reference_qual_condition="name=^EQ" type="reference"/>
+        <element label="Asset" max_length="32" name="asset" reference="x_1558402_smart_0_asset_table" type="reference"/>
+        <element label="Customer" max_length="32" name="customer" reference="x_1558402_smart_0_supportcustomer" type="reference"/>
+        <element dependent="assignment_group" dependent_on_field="assignment_group" label="Assigned to" mandatory="true" max_length="32" name="assigned_to" reference="sys_user" type="reference" use_dependent_field="true" use_dynamic_default="true"/>
+        <element label="External Event ID" max_length="40" name="external_event_id" type="string"/>
+        <element label="Description" max_length="200" name="description" type="string"/>
+        <element default="javascript:gs.getUserID();" dynamic_default_value="2fd8e97bef3221002841f7f775c0fbc1" label="Opened By" max_length="32" name="opened_by" read_only="true" read_only_option="display_read_only" reference="sys_user" type="reference" use_dynamic_default="true"/>
+        <element choice="3" label="Priority" mandatory="true" max_length="40" name="priority" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Medium" sequence="2" value="medium"/>
+                <element inactive_on_update="false" label="Low" sequence="3" value="low"/>
+                <element inactive_on_update="false" label="High" sequence="1" value="high"/>
+            </choice>
+        </element>
+        <element choice="3" default="new" label="State" mandatory="true" max_length="40" name="state" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="open" sequence="3" value="open"/>
+                <element inactive_on_update="false" label="New" sequence="0" value="new"/>
+                <element inactive_on_update="false" label="Awaiting" sequence="4" value="Awaiting"/>
+                <element inactive_on_update="false" label="Closed" sequence="2" value="closed"/>
+                <element inactive_on_update="false" label="In Progress" sequence="1" value="in_progress"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Case Number" mandatory="true" max_length="40" name="number" type="string" unique="true"/>
+        <index name="index">
+            <element name="asset"/>
+        </index>
+        <index name="index2">
+            <element name="assigned_to"/>
+        </index>
+        <index name="index3">
+            <element name="assignment_group"/>
+        </index>
+        <index name="index4">
+            <element name="customer"/>
+        </index>
+        <index name="index5" unique="true">
+            <element name="external_event_id"/>
+        </index>
+        <index name="index6" unique="true">
+            <element name="number"/>
+        </index>
+        <index name="index7">
+            <element name="opened_by"/>
+        </index>
+    </element>
+</database>

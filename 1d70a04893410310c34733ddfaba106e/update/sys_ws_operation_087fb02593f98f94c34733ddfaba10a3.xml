@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_operation">
+    <sys_ws_operation action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <consumes>application/json,application/xml,text/xml</consumes>
+        <consumes_customized>false</consumes_customized>
+        <default_operation_uri/>
+        <enforce_acl/>
+        <http_method>GET</http_method>
+        <name>GetCaseDetails</name>
+        <operation_script><![CDATA[(function process(request, response) {
+
+    try {
+
+        var caseNumber = request.queryParams.number;
+
+        var gr = new GlideRecord('x_1558402_smart_0_support_case');
+
+        // ✅ Apply filter FIRST
+        if (caseNumber) {
+            gr.addQuery('number', caseNumber);
+        }
+
+        gr.query();
+
+        // ✅ If no case found
+        if (!gr.next()) {
+            response.setStatus(404);
+            response.setBody({
+                message: "Case not found"
+            });
+            return;
+        }
+
+        // ✅ Return single case
+        response.setStatus(200);
+        response.setBody({
+            case_number: gr.getValue('number'),
+            customer: gr.getDisplayValue('customer'),
+            asset: gr.getDisplayValue('asset'),
+            priority: gr.getValue('priority'),
+            state: gr.getValue('state'),
+            description: gr.getValue('description'),
+            created_on: gr.getValue('sys_created_on')
+        });
+
+    } catch (e) {
+
+        gs.error("Case GET API Error: " + e.message);
+
+        response.setStatus(500);
+        response.setBody({
+            message: e.message
+        });
+    }
+
+})(request, response);]]></operation_script>
+        <operation_uri>/api/x_1558402_smart_0/applicationintegration/Case</operation_uri>
+        <produces>application/json,application/xml,text/xml</produces>
+        <produces_customized>false</produces_customized>
+        <relative_path>/Case</relative_path>
+        <request_example/>
+        <requires_acl_authorization>false</requires_acl_authorization>
+        <requires_authentication>true</requires_authentication>
+        <requires_snc_internal_role>true</requires_snc_internal_role>
+        <short_description/>
+        <support_trailing_slash>false</support_trailing_slash>
+        <sys_class_name>sys_ws_operation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-30 09:58:18</sys_created_on>
+        <sys_id>087fb02593f98f94c34733ddfaba10a3</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>GetCaseDetails</sys_name>
+        <sys_package display_value="Smart Support" source="x_1558402_smart_0">1d70a04893410310c34733ddfaba106e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Smart Support">1d70a04893410310c34733ddfaba106e</sys_scope>
+        <sys_update_name>sys_ws_operation_087fb02593f98f94c34733ddfaba10a3</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-30 11:12:12</sys_updated_on>
+        <web_service_definition display_value="applicationintegration">83c26c2093154790c34733ddfaba10df</web_service_definition>
+        <web_service_version/>
+    </sys_ws_operation>
+</record_update>

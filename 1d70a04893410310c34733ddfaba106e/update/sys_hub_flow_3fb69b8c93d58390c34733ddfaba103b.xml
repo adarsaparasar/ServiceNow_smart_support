@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <allow_high_security_roles>false</allow_high_security_roles>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=1833975000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>29000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>escalate_gold_customer_case</internal_name>
+        <label_cache>[{"name":"subflow.case_record.priority","label":"Input➛Case Record➛Priority","reference":"","reference_display":"Priority","type":"choice","base_type":"choice","parent_table_name":"x_1558402_smart_0_support_case","column_name":"priority","choices":[{"parameters":{"name":"x_1558402_smart_0_support_case","dependent_values":[""],"dependent_values_map":{"":"High"}},"sequence":1.0,"used":false,"label":"High","selected":false,"reference":false,"image":"","rawLabel":"High","missing":false,"value":"high"},{"parameters":{"name":"x_1558402_smart_0_support_case","dependent_values":[""],"dependent_values_map":{"":"Medium"}},"sequence":2.0,"used":false,"label":"Medium","selected":false,"reference":false,"image":"","rawLabel":"Medium","missing":false,"value":"medium"},{"parameters":{"name":"x_1558402_smart_0_support_case","dependent_values":[""],"dependent_values_map":{"":"Low"}},"sequence":3.0,"used":false,"label":"Low","selected":false,"reference":false,"image":"","rawLabel":"Low","missing":false,"value":"low"}],"usedInstances":{"1311678f-937c-402e-9636-bc9278ae1f33":["priority"]}},{"name":"subflow.case_record","label":"Input➛Case Record","reference":"x_1558402_smart_0_support_case","reference_display":"Case","type":"reference","base_type":"reference","column_name":"","usedInstances":{"1311678f-937c-402e-9636-bc9278ae1f33":["record"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"65892c73-a782-40c9-818f-f0943a1002ef","uiTypeLabel":"Reference"}},{"name":"subflow.case_record.number","label":"Input➛Case Record➛Case Number","reference":"","reference_display":"Case Number","type":"string","base_type":"string","parent_table_name":"x_1558402_smart_0_support_case","column_name":"number","usedInstances":{"15837a79-1142-432e-a94d-18897f8c420b":["log_message"]}}]</label_cache>
+        <master_snapshot>afd2234093d98390c34733ddfaba10bc</master_snapshot>
+        <master_snapshot_digest/>
+        <name>Escalate Gold Customer Case</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>draft</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-01 08:09:01</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>3fb69b8c93d58390c34733ddfaba103b</sys_id>
+        <sys_mod_count>45</sys_mod_count>
+        <sys_name>Escalate Gold Customer Case</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Smart Support" source="x_1558402_smart_0">1d70a04893410310c34733ddfaba106e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Smart Support">1d70a04893410310c34733ddfaba106e</sys_scope>
+        <sys_update_name>sys_hub_flow_3fb69b8c93d58390c34733ddfaba103b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-22 13:41:34</sys_updated_on>
+        <type>subflow</type>
+        <updation_source/>
+        <version>2</version>
+        <version_record>ad3ca0cf93258b54c34733ddfaba104d</version_record>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=3fb69b8c93d58390c34733ddfaba103b"/>
+    <sys_variable_value action="delete_multiple" query="document_key=3fb69b8c93d58390c34733ddfaba103b"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=3fb69b8c93d58390c34733ddfaba103b"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=3fb69b8c93d58390c34733ddfaba103b^sys_idNOT IN73b69b8c93d58390c34733ddfaba103d"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>3fb69b8c93d58390c34733ddfaba103b</id>
+        <name>Escalate Gold Customer Case</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-01 08:09:01</sys_created_on>
+        <sys_id>73b69b8c93d58390c34733ddfaba103d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-01 08:09:01</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=73b69b8c93d58390c34733ddfaba103d"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=3fb69b8c93d58390c34733ddfaba103b^sys_idNOT INfe40ef8893998390c34733ddfaba1078"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=65892c73-a782-40c9-818f-f0943a1002ef</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>x_1558402_smart_0_support_case</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>case_record</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Case Record</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Escalate Gold Customer Case">3fb69b8c93d58390c34733ddfaba103b</model>
+        <model_id>3fb69b8c93d58390c34733ddfaba103b</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_3fb69b8c93d58390c34733ddfaba103b</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference display_value="" name="x_1558402_smart_0_support_case">x_1558402_smart_0_support_case</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-01 08:50:44</sys_created_on>
+        <sys_id>fe40ef8893998390c34733ddfaba1078</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Smart Support">1d70a04893410310c34733ddfaba106e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-18 07:57:39</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=fe40ef8893998390c34733ddfaba1078"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=3fb69b8c93d58390c34733ddfaba103b"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=3fb69b8c93d58390c34733ddfaba103b"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=3fb69b8c93d58390c34733ddfaba103b"/>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=3fb69b8c93d58390c34733ddfaba103b^sys_idNOT IN126063c893998390c34733ddfaba101d,81612b4c93998390c34733ddfaba107c"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Escalate Gold Customer Case">3fb69b8c93d58390c34733ddfaba103b</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-01 08:51:15</sys_created_on>
+        <sys_id>126063c893998390c34733ddfaba101d</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_scope display_value="Smart Support">1d70a04893410310c34733ddfaba106e</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-22 14:04:54</sys_updated_on>
+        <ui_id>1311678f-937c-402e-9636-bc9278ae1f33</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1VUW/aMBD+K8jPEUoIUOCtKkKb1LVTqfpS2sixL2DJiTPbacsQ/33nOAHEuopKfVin8RLufGd/3/n7kvsNEZxMSNjjYTSOhiyO4rgXhr1RP0qHcRr1eEwBgASkoDlg5ROVFRiM6z+YKLVQWtj1ogrDmK/EcvVoLLXgY1EkpVZLDcY8UmPEssihsMlSq6r0FZsF4cKUkq4XZLIg85xq25lXZanwOVO68wW37HxvTyHBwh9dV9MhcHYWsnE8Hoziccji/lkcc57RlEYh9OtyszaJ4CfWb5Fag+fu32XIVkJyDQWZ3D8EpKQaL9eCJpPN0dKp6pA0BYmlMwGSm1fkYteliy3kOAgLiZePz182zbfNYueuWVSaO1BRGAYEXiwUHBBPRqWBgOS04NQqvSYTqytMaKD8upDrXcVKFBa3Ja72xYifCCAahvXPVWeANBn4il2YNHfl09mUWjrH/ZmtdFPKVkowJFUPiENGK2kvDnO+4Lq0QhW+xdJUtt1KVnlx5cdDdhu0YsNMZRAElI6tw+/JZfOVer5pQc5EUU+mISoVo3IXUWu1SCvr4GwISKgFmdOyFMXSifVJ1M0IJe8uJQbdTKpnPNOpt0uZw93F2dLuDPPTOn1HtXAkvuE22LwNnOguJCp+TwVnmPyoHBJPrKGQ1FOoR5DUsnDNTIvSnuNRT9AA3wbNy6gPb8ot2qtLA0OJHLyMNhtTpY5Ml1Gcol/fvuLpd3vgBFCtB25aVMcoGw9wxar6SgQ/MsC0Wel8nR6q/6PE3/8v+79Y9ungLYWx8V5QB3vupf+SRIPBqB/2EuM+MEmYGP+JSZwVfnfAhc++zwUnYGxdcFvf/euY24/Bce7ysLdz5RcaGww+zAajz2SDhsan98Gf1P/wC/Q2Z8aDCgAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=126063c893998390c34733ddfaba101d"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Log">5bc1bcc6531003003bf1d9109ec587d4</action_type>
+        <action_type_parent display_value="Log">0e0ae8c2531003003bf1d9109ec587c8</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>5bc1bcc6531003003bf1d9109ec587d4</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Escalate Gold Customer Case">3fb69b8c93d58390c34733ddfaba103b</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-01 08:55:32</sys_created_on>
+        <sys_id>81612b4c93998390c34733ddfaba107c</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_scope display_value="Smart Support">1d70a04893410310c34733ddfaba106e</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-22 14:04:54</sys_updated_on>
+        <ui_id>15837a79-1142-432e-a94d-18897f8c420b</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VUUW/aMBD+K5GfISJQ1pW3CdpqEi3S0NhDW6WOcwFLjp3ZDpQx/nvPiYGsRRNI3dOkvNyXs+++z9/dw4bwlAxIP2FRwtinfi/qdHr4JVmUXkWdK2D9z5fpJWkRSXPATKHmsYAlCISWVJQO4zJTGKbcFIKuZx79WqNswUWqQZLBw1OLFFTjPRY0GWze/Dq1EUETrD4gY9/FkcbsunAQWyjOwMdjf2y4A5VOXRudFoEXCzIFrJ9RYaBFcipTapVe7xENNJ1IcQAWXFq8jbjkF8N/Yb2LjsvLABkxqP/tw9iLU8PZiFo6tbpkttQ+tW7WoBabPcV2O7hXEoJ2u6F2o/Vt65Dr5X7zJj4zamb+oFpyOW8krxA5JHebyddaK91IBR/73N4WXy6FjJbCDs9nEJ3MoHsOg94ZDC4cg1r8SWG5QjeSyHmGJmL3NEqUubyvfUb2fGdv7F+jo6NTUBq0ABTOZs433kTZdKFW33YeueGy6sj/FIpRsY+otZonpXX6bggIyPGiOKdFgULEhVZLXh3GZvNwLjAIM6FWWNTwuQwpc9RCdDUNbxAfVfCMau5o3uE1eHjbImZthoIacyCLFo5/lq6TmrrnEFdCVUeY5oX9ggWW4Nt18lfj3O39bZyh/+f45mAMnUPjrb5Po248ntwGv4Nrg3JQi2yDWyXSYFgaq3LQwZAaGASbjSkTxzhkGMcaGL5vKMs8Ab3dPupH+fz8KN9vqX9Q4byNd4JEOyff7fU5KprfegaNUs1Gc+tNd+Bu8D5s63X7/Y9Ze8cWyfvRPGsy/7/Be3oF85ic+9IHAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=81612b4c93998390c34733ddfaba107c"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=3fb69b8c93d58390c34733ddfaba103b"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=3fb69b8c93d58390c34733ddfaba103b"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=3fb69b8c93d58390c34733ddfaba103b"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=3fb69b8c93d58390c34733ddfaba103b"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>case_record</element>
+        <help/>
+        <hint/>
+        <label>Case Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_3fb69b8c93d58390c34733ddfaba103b</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-01 08:50:45</sys_created_on>
+        <sys_id>7e40ef8893998390c34733ddfaba107f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Smart Support" source="x_1558402_smart_0">1d70a04893410310c34733ddfaba106e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Smart Support">1d70a04893410310c34733ddfaba106e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-01 08:50:45</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_3fb69b8c93d58390c34733ddfaba103b"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_3fb69b8c93d58390c34733ddfaba103b"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <allow_high_security_roles>false</allow_high_security_roles>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>29000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <flow_priority>MEDIUM</flow_priority>
+        <internal_name>escalate_gold_customer_case</internal_name>
+        <label_cache>[{"name":"subflow.case_record.priority","label":"Input➛Case Record➛Priority","reference":"","reference_display":"Priority","type":"choice","base_type":"choice","parent_table_name":"x_1558402_smart_0_support_case","column_name":"priority","choices":[{"parameters":{"name":"x_1558402_smart_0_support_case","dependent_values":[""],"dependent_values_map":{"":"High"}},"sequence":1.0,"used":false,"label":"High","selected":false,"reference":false,"image":"","rawLabel":"High","missing":false,"value":"high"},{"parameters":{"name":"x_1558402_smart_0_support_case","dependent_values":[""],"dependent_values_map":{"":"Medium"}},"sequence":2.0,"used":false,"label":"Medium","selected":false,"reference":false,"image":"","rawLabel":"Medium","missing":false,"value":"medium"},{"parameters":{"name":"x_1558402_smart_0_support_case","dependent_values":[""],"dependent_values_map":{"":"Low"}},"sequence":3.0,"used":false,"label":"Low","selected":false,"reference":false,"image":"","rawLabel":"Low","missing":false,"value":"low"}],"usedInstances":{"1311678f-937c-402e-9636-bc9278ae1f33":["priority"]}},{"name":"subflow.case_record","label":"Input➛Case Record","reference":"x_1558402_smart_0_support_case","reference_display":"Case","type":"reference","base_type":"reference","column_name":"","usedInstances":{"1311678f-937c-402e-9636-bc9278ae1f33":["record"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"65892c73-a782-40c9-818f-f0943a1002ef","uiTypeLabel":"Reference"}},{"name":"subflow.case_record.number","label":"Input➛Case Record➛Case Number","reference":"","reference_display":"Case Number","type":"string","base_type":"string","parent_table_name":"x_1558402_smart_0_support_case","column_name":"number","usedInstances":{"15837a79-1142-432e-a94d-18897f8c420b":["log_message"]}}]</label_cache>
+        <master>true</master>
+        <name>Escalate Gold Customer Case</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Escalate Gold Customer Case">3fb69b8c93d58390c34733ddfaba103b</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-01 09:01:59</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>afd2234093d98390c34733ddfaba10bc</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Smart Support">1d70a04893410310c34733ddfaba106e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-22 13:35:18</sys_updated_on>
+        <type>subflow</type>
+        <version>2</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=afd2234093d98390c34733ddfaba10bc"/>
+    <sys_variable_value action="delete_multiple" query="document_key=afd2234093d98390c34733ddfaba10bc"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=afd2234093d98390c34733ddfaba10bc"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=afd2234093d98390c34733ddfaba10bc^sys_idNOT INe7d2234093d98390c34733ddfaba10be"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>afd2234093d98390c34733ddfaba10bc</id>
+        <name>Escalate Gold Customer Case</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-01 09:01:59</sys_created_on>
+        <sys_id>e7d2234093d98390c34733ddfaba10be</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-01 09:01:59</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=e7d2234093d98390c34733ddfaba10be"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=afd2234093d98390c34733ddfaba10bc^sys_idNOT INe7d2234093d98390c34733ddfaba10c0"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=65892c73-a782-40c9-818f-f0943a1002ef</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>x_1558402_smart_0_support_case</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>case_record</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Case Record</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Escalate Gold Customer Case">afd2234093d98390c34733ddfaba10bc</model>
+        <model_id>afd2234093d98390c34733ddfaba10bc</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_afd2234093d98390c34733ddfaba10bc</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference display_value="" name="x_1558402_smart_0_support_case">x_1558402_smart_0_support_case</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-01 09:01:59</sys_created_on>
+        <sys_id>e7d2234093d98390c34733ddfaba10c0</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Smart Support">1d70a04893410310c34733ddfaba106e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-18 07:59:11</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=e7d2234093d98390c34733ddfaba10c0"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=afd2234093d98390c34733ddfaba10bc"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=afd2234093d98390c34733ddfaba10bc"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=afd2234093d98390c34733ddfaba10bc"/>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=afd2234093d98390c34733ddfaba10bc^sys_idNOT IN04e2634093d98390c34733ddfaba1005,08e2634093d98390c34733ddfaba1006"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Escalate Gold Customer Case">afd2234093d98390c34733ddfaba10bc</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-01 09:02:01</sys_created_on>
+        <sys_id>04e2634093d98390c34733ddfaba1005</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Smart Support">1d70a04893410310c34733ddfaba106e</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-22 13:35:18</sys_updated_on>
+        <ui_id>1311678f-937c-402e-9636-bc9278ae1f33</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VVXW/aMBT9K5GfI5QQoMDbBEKb1LVTmfpS2sixb8CSE2e205Yh/vuu44Situqo1JduPOH75XNO7r2+2RHByZQMgEfxJB6xJE6SfhT1x4M4GyVZ3OcJBYhJSEpaAEZqYEpzPN9TWTvDbmfqLJfqoceogdT793uM4MJUkm6v20C0sI2QXENJpje3IamoxpoWNJnunrlOBSVpBhJDrzpUz1HabeXOXLG6gNKmojOet5nz1hN8m6MHkxycOAoJPFooOSCQnEoDISloyalVekumVtdo0ED5ZSm3h4iNKK0nWtBHI37jzYPIxeWAzFgrwuGYtgJ5cz6nli6xMrO1PuilBAPjNeGQ01ra2bHNB1xWVqjSp1iayS5bybooL7wi5FDg6HvU+ME4VI6nQ+5p5cuNerjqQC5E2UjSUpSKUXk4UWu1yGrr4OwISGg0LmhViXKdVlrdiyYZoRS9tcRDz3UK3mnEuuxR5nD3UFXaW6B93pivqRaOxHcsg8n7kJitmUlqzBMV1DD9VTsknlhLIW1UaCRIm05wyUyLyn7Bq+6hBb4P27bPhm91GJs8NdRRzafWf0zj4XA8iPqpKai2aZSauqoU/nOj8HICZt76vik4AWM3BT+bb/865nYQXtjOj3ODC+9ox2D4YWMw/kxj0NL49HPwt+6P+m/u16NOahreHHV+pYXSwm5XdRQlfCPWmztjqQV/FqXjvNZgzB3CRS6NHmut6spH7FbdbKzIdEWWbnyCpR+eYKF08BVLBj+6W0i48lc30XQEnJ1FbJJMhuNkErFkcJYknOc0o3EEgyYctcJlf2L8K6/VP8jwfXvnhO7o9s5CgOTmlXbplg4UKISF1LfPs8XTOoPr1nl4gz9s+8SjqPl9oh303zzFt38A1ha05oMKAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=04e2634093d98390c34733ddfaba1005"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Log">5bc1bcc6531003003bf1d9109ec587d4</action_type>
+        <action_type_parent display_value="Log">0e0ae8c2531003003bf1d9109ec587c8</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>5bc1bcc6531003003bf1d9109ec587d4</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Escalate Gold Customer Case">afd2234093d98390c34733ddfaba10bc</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-01 09:02:01</sys_created_on>
+        <sys_id>08e2634093d98390c34733ddfaba1006</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Smart Support">1d70a04893410310c34733ddfaba106e</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-01 09:19:54</sys_updated_on>
+        <ui_id>15837a79-1142-432e-a94d-18897f8c420b</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VUUW/aMBD+K5GfISJQ1pW3CdpqEi3S0NhDW6WOcwFLjp3ZDpQx/nvPiYGsRRNI3dOkvNyXs+++z9/dw4bwlAxIP2FRwtinfi/qdHr4JVmUXkWdK2D9z5fpJWkRSXPATKHmsYAlCISWVJQO4zJTGKbcFIKuZx79WqNswUWqQZLBw1OLFFTjPRY0GWze/Dq1EUETrD4gY9/FkcbsunAQWyjOwMdjf2y4A5VOXRudFoEXCzIFrJ9RYaBFcipTapVe7xENNJ1IcQAWXFq8jbjkF8N/Yb2LjsvLABkxqP/tw9iLU8PZiFo6tbpkttQ+tW7WoBabPcV2O7hXEoJ2u6F2o/Vt65Dr5X7zJj4zamb+oFpyOW8krxA5JHebyddaK91IBR/73N4WXy6FjJbCDs9nEJ3MoHsOg94ZDC4cg1r8SWG5QjeSyHmGJmL3NEqUubyvfUb2fGdv7F+jo6NTUBq0ABTOZs433kTZdKFW33YeueGy6sj/FIpRsY+otZonpXX6bggIyPGiOKdFgULEhVZLXh3GZvNwLjAIM6FWWNTwuQwpc9RCdDUNbxAfVfCMau5o3uE1eHjbImZthoIacyCLFo5/lq6TmrrnEFdCVUeY5oX9ggWW4Nt18lfj3O39bZyh/+f45mAMnUPjrb5Po248ntwGv4Nrg3JQi2yDWyXSYFgaq3LQwZAaGASbjSkTxzhkGMcaGL5vKMs8Ab3dPupH+fz8KN9vqX9Q4byNd4JEOyff7fU5KprfegaNUs1Gc+tNd+Bu8D5s63X7/Y9Ze8cWyfvRPGsy/7/Be3oF85ic+9IHAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=08e2634093d98390c34733ddfaba1006"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=afd2234093d98390c34733ddfaba10bc"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=afd2234093d98390c34733ddfaba10bc"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=afd2234093d98390c34733ddfaba10bc"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=afd2234093d98390c34733ddfaba10bc"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>case_record</element>
+        <help/>
+        <hint/>
+        <label>Case Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_afd2234093d98390c34733ddfaba10bc</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-01 09:02:00</sys_created_on>
+        <sys_id>73d2234093d98390c34733ddfaba10d3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Smart Support" source="x_1558402_smart_0">1d70a04893410310c34733ddfaba106e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Smart Support">1d70a04893410310c34733ddfaba106e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-01 09:02:00</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_afd2234093d98390c34733ddfaba10bc"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_afd2234093d98390c34733ddfaba10bc"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>3fb69b8c93d58390c34733ddfaba103b</sys_id>
+        <latest_snapshot>afd2234093d98390c34733ddfaba10bc</latest_snapshot>
+        <compiler_build>glide-australia-02-11-2026__patch1-03-23-2026_03-31-2026_1137.zip</compiler_build>
+        <version_record/>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=3fb69b8c93d58390c34733ddfaba103b"/>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=3fb69b8c93d58390c34733ddfaba103b^sys_idNOT IN44e2634093d98390c34733ddfaba1053"/>
+    <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
+        <plan>{"@class":"com.snc.process_flow.engine.serialization.plan_data.ChunkingPlanData","chunk_data":{"table":"sys_flow_subflow_plan","id":"44e2634093d98390c34733ddfaba1053","name":"plan","plan_signature":null},"plan_data":"CHUNKING_PLAN"}</plan>
+        <plan_id display_value="Escalate Gold Customer Case">3fb69b8c93d58390c34733ddfaba103b</plan_id>
+        <snapshot>1191b08b93658b54c34733ddfaba10ad</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-01 09:02:01</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>44e2634093d98390c34733ddfaba1053</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-22 13:35:18</sys_updated_on>
+    </sys_flow_subflow_plan>
+</record_update>

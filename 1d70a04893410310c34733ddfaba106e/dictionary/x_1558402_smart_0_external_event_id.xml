@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="6610b54493c90310c34733ddfaba1050" label="External event log" max_length="40" name="x_1558402_smart_0_external_event_id" type="collection">
+        <element label="Asset Serial Number" max_length="40" name="asset_serial_number" type="string"/>
+        <element label="Error Message" max_length="150" name="error_message" type="string"/>
+        <element label="Customer" max_length="40" name="customer" type="string"/>
+        <element label="Description" max_length="40" name="description" type="string"/>
+        <element label="Asset" max_length="40" name="asset" type="string"/>
+        <element label="Payload" mandatory="true" max_length="10000" name="payload" type="string"/>
+        <element label="Event ID" mandatory="true" max_length="40" name="event_id" type="string" unique="true"/>
+        <element label="Case" max_length="32" name="case" reference="x_1558402_smart_0_support_case" type="reference"/>
+        <element label="Priority" max_length="40" name="priority" type="string"/>
+        <element choice="3" default="received" label="Status" mandatory="true" max_length="40" name="status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Error" sequence="1" value="error"/>
+                <element inactive_on_update="false" label="Received" sequence="2" value="received"/>
+                <element inactive_on_update="false" label="Processed" sequence="0" value="processed"/>
+            </choice>
+        </element>
+        <element label="Last attempt" max_length="40" name="last_attempt" type="glide_date_time"/>
+        <element label="Source" max_length="40" name="source_system" type="string"/>
+        <element label="Received Time" max_length="40" name="received_time" type="glide_date_time"/>
+        <element label="Retry count" max_length="40" name="retry_count" type="integer"/>
+        <index name="index">
+            <element name="case"/>
+        </index>
+        <index name="index2" unique="true">
+            <element name="event_id"/>
+        </index>
+    </element>
+</database>

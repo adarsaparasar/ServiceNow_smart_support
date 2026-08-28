@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="3a5148c093d90390c34733ddfaba106d" extends="sys_import_set_row" label="Sample Import Set Table" max_length="40" name="x_1558402_smart_0_sample_import_set_table" type="collection">
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Priority" label="Priority" max_length="40" name="u_priority" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=External Event ID" label="External Event ID" max_length="40" name="u_external_event_id" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Asset" label="Asset" max_length="40" name="u_asset" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=State" label="State" max_length="40" name="u_state" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Customer" label="Customer" max_length="40" name="u_customer" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Description" label="Description" max_length="40" name="u_description" type="string"/>
+    </element>
+</database>
