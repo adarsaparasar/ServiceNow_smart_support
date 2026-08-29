@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="cb0251d793a90f54c34733ddfaba1035" label="Request Tracker" max_length="40" name="x_1558402_smart_0_request_tracker" type="collection">
+        <element label="Source" max_length="40" name="source" type="string"/>
+        <element label="Last Error" max_length="1000" name="last_error" type="string"/>
+        <element choice="3" label="Status" max_length="40" name="status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Pending" sequence="0" value="pending"/>
+                <element inactive_on_update="false" label="Success" sequence="2" value="success"/>
+                <element inactive_on_update="false" label="Failed" sequence="3" value="failed"/>
+                <element inactive_on_update="false" label="Failed Permanent" sequence="4" value="failed_permanent"/>
+                <element inactive_on_update="false" label="Processing" sequence="1" value="processing"/>
+            </choice>
+        </element>
+        <element label="Next Retry Time" max_length="40" name="next_retry_time" type="glide_date_time"/>
+        <element label="Retry Count" max_length="40" name="retry_count" type="integer"/>
+        <element label="Event ID" mandatory="true" max_length="40" name="event_id" type="string"/>
+        <element label="Payload" max_length="4000" name="payload" type="string"/>
+    </element>
+</database>

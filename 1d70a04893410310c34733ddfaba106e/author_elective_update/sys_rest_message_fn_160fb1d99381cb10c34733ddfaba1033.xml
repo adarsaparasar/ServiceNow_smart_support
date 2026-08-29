@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn">
+    <sys_rest_message_fn action="DELETE">
+        <authentication_type>no_authentication</authentication_type>
+        <basic_auth_password/>
+        <basic_auth_profile/>
+        <basic_auth_user/>
+        <content/>
+        <function_name>GET</function_name>
+        <http_method>get</http_method>
+        <lock>false</lock>
+        <oauth2_profile/>
+        <protocol_name/>
+        <qualified_name>SmartSupport API [ GET ]</qualified_name>
+        <rest_endpoint>https://jsonplaceholder.typicode.com/posts</rest_endpoint>
+        <rest_message display_value="SmartSupport API">60ee3d999381cb10c34733ddfaba10d2</rest_message>
+        <sys_class_name>sys_rest_message_fn</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-23 12:42:32</sys_created_on>
+        <sys_id>160fb1d99381cb10c34733ddfaba1033</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>GET</sys_name>
+        <sys_package display_value="Smart Support" source="x_1558402_smart_0">1d70a04893410310c34733ddfaba106e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Smart Support">1d70a04893410310c34733ddfaba106e</sys_scope>
+        <sys_update_name>sys_rest_message_fn_160fb1d99381cb10c34733ddfaba1033</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-30 09:02:54</sys_updated_on>
+        <use_basic_auth>false</use_basic_auth>
+        <use_mid_server/>
+        <use_mutual_auth>false</use_mutual_auth>
+    </sys_rest_message_fn>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Smart Support">1d70a04893410310c34733ddfaba106e</application>
+        <file_path/>
+        <instance_id>e0aa26f2eba0c39c56eafddacad0cd4b</instance_id>
+        <instance_name>dev397008</instance_name>
+        <name>sys_rest_message_fn_160fb1d99381cb10c34733ddfaba1033</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn"><sys_rest_message_fn action="INSERT_OR_UPDATE"><authentication_type>no_authentication</authentication_type><basic_auth_password/><basic_auth_profile/><basic_auth_user/><content/><function_name>GET</function_name><http_method>get</http_method><lock>false</lock><oauth2_profile/><protocol_name/><qualified_name>SmartSupport API [ GET ]</qualified_name><rest_endpoint>https://jsonplaceholder.typicode.com/posts</rest_endpoint><rest_message display_value="SmartSupport API">60ee3d999381cb10c34733ddfaba10d2</rest_message><sys_class_name>sys_rest_message_fn</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-05-23 12:42:32</sys_created_on><sys_id>160fb1d99381cb10c34733ddfaba1033</sys_id><sys_mod_count>2</sys_mod_count><sys_name>GET</sys_name><sys_package display_value="Smart Support" source="x_1558402_smart_0">1d70a04893410310c34733ddfaba106e</sys_package><sys_policy/><sys_scope display_value="Smart Support">1d70a04893410310c34733ddfaba106e</sys_scope><sys_update_name>sys_rest_message_fn_160fb1d99381cb10c34733ddfaba1033</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-06-30 09:02:54</sys_updated_on><use_basic_auth>false</use_basic_auth><use_mid_server/><use_mutual_auth>false</use_mutual_auth></sys_rest_message_fn></record_update>]]></payload>
+        <payload_hash>-1233898307</payload_hash>
+        <record_name>GET</record_name>
+        <reverted_from/>
+        <source>1970a04893410310c34733ddfaba1071</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-30 09:02:55</sys_created_on>
+        <sys_id>bf2930e593b98f94c34733ddfaba10dd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19f17c466be0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-30 09:02:55</sys_updated_on>
+        <type>HTTP Method</type>
+        <update_guid>bb2930e516b98f94b2f4b81e88e576dc</update_guid>
+        <update_guid_history>bb2930e516b98f94b2f4b81e88e576dc:-1233898307,752fb5d92981cb10af14aa82de82ef19:950358456,a60fb1d96f81cb100d142893bd6d4738:1252696089</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-30 09:12:40</sys_created_on>
+        <sys_db_object display_value="" name="sys_rest_message_fn">sys_rest_message_fn</sys_db_object>
+        <sys_id>9e603610442a42789c2fede411e2c640</sys_id>
+        <sys_metadata>160fb1d99381cb10c34733ddfaba1033</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>GET</sys_name>
+        <sys_package display_value="Smart Support" source="x_1558402_smart_0">1d70a04893410310c34733ddfaba106e</sys_package>
+        <sys_parent display_value="">60ee3d999381cb10c34733ddfaba10d2</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Smart Support">1d70a04893410310c34733ddfaba106e</sys_scope>
+        <sys_scope_delete display_value="">120c80593ad14bca82f912b5b57657c1</sys_scope_delete>
+        <sys_update_name>sys_rest_message_fn_160fb1d99381cb10c34733ddfaba1033</sys_update_name>
+        <sys_update_version display_value="sys_rest_message_fn_160fb1d99381cb10c34733ddfaba1033">bf2930e593b98f94c34733ddfaba10dd</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-30 09:12:40</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

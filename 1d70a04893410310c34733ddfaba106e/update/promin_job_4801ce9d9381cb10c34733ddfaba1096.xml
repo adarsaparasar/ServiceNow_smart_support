@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="promin_job">
+    <promin_job action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <advanced>false</advanced>
+        <business_calendar/>
+        <condition><![CDATA[var gr = new GlideRecord('x_1558402_smart_0_request_tracker');
+
+gr.addQuery('status', 'Failed');
+gr.addQuery('retry_count', '<', 3);
+gr.query();
+
+while (gr.next()) {
+
+    try {
+
+        var payload = JSON.parse(gr.payload);
+
+        var eventLogGR = new GlideRecord('x_1558402_smart_0_external_event_id');
+        eventLogGR.initialize();
+        eventLogGR.event_id = payload.event_id;
+        eventLogGR.payload = gr.payload;
+        eventLogGR.status = 'Pending';
+        eventLogGR.insert();
+
+        gr.status = 'Success';
+
+    } catch (e) {
+
+        gr.retry_count = gr.retry_count + 1;
+        gr.last_error = e.message;
+
+        if (gr.retry_count >= 3) {
+            gr.status = 'Failed Permanent';
+        }
+
+    }
+
+    gr.update();
+}]]></condition>
+        <conditional>true</conditional>
+        <entered_run_end/>
+        <entered_run_start/>
+        <entered_time>1970-01-01 00:15:00</entered_time>
+        <max_drift/>
+        <name>Fetch External Events</name>
+        <offset/>
+        <offset_type/>
+        <repeat_every/>
+        <run_as display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek>1</run_dayofweek>
+        <run_daysofweek/>
+        <run_end/>
+        <run_month/>
+        <run_period>1970-01-01 00:15:00</run_period>
+        <run_start/>
+        <run_time>1970-01-01 08:15:00</run_time>
+        <run_type>periodically</run_type>
+        <run_weekinmonth/>
+        <script><![CDATA[try {
+	SNC.ProcessOptimization.executeScheduledJob(current.getUniqueValue());
+}catch (error){
+	gs.error(error.getMessage());
+}]]></script>
+        <sys_class_name>promin_job</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-23 12:56:46</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>4801ce9d9381cb10c34733ddfaba1096</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>Fetch External Events</sys_name>
+        <sys_package display_value="Smart Support" source="x_1558402_smart_0">1d70a04893410310c34733ddfaba106e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Smart Support">1d70a04893410310c34733ddfaba106e</sys_scope>
+        <sys_update_name>promin_job_4801ce9d9381cb10c34733ddfaba1096</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-23 14:33:31</sys_updated_on>
+        <time_zone>floating</time_zone>
+        <upgrade_safe>false</upgrade_safe>
+    </promin_job>
+</record_update>

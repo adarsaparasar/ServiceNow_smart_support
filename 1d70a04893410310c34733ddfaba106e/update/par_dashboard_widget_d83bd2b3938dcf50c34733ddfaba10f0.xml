@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_widget">
+    <par_dashboard_widget action="INSERT_OR_UPDATE">
+        <canvas display_value="">49b9b9c593414b10c34733ddfaba10c4</canvas>
+        <component display_value="Column">2bd5dc19a7ad083941b7c992a966dd78</component>
+        <component_props>{"configVersion":"23.0.0-ci-SNAPSHOT","showDataLabels":true,"disableTooltip":false,"showClosestSeriesOnHover":false,"showXGrid":true,"showDateRangeByDefault":false,"showYGrid":true,"hideYAxis0":false,"yAxis0Position":"left","hideYAxis1":false,"yAxis1Position":"right","hideYAxis2":false,"yAxis2Position":"right","hideYAxis3":false,"yAxis3Position":"right","hideYAxis4":false,"yAxis4Position":"right","showLegend":true,"showLegendValue":false,"legendPosition":"bottom","legendHorizontalAlignment":"center","legendExpandToFit":false,"yAxisStyle":"default","lineStrokeWidth":"2","chartVariation":"stacked","showPercentageOfTotalInTooltip":true,"extensionType":"bar","showContinuousLine":true,"showMarkers":false,"rangesConfig":{},"colorConfig":{"type":"palette","palette":"f08a294943300210c25373e60db8f245"},"newReporting":false,"enableAddZerosAtApi":true,"additionalGroupByConfig":[],"dataSources":[{"isDatabaseView":false,"allowRealTime":true,"label":"Case","sourceType":"table","tableOrViewName":"x_1558402_smart_0_support_case","preferredVisualizations":["d24d53f60350de7a652caf3188a46ed2"],"id":"dGFibGV4XzE1NTg0MDJfc21hcnRfMF9zdXBwb3J0X2Nhc2UxNzgwMjE4NDQxODA5","dataCategories":["trend","group","simple"]}],"showHeader":true,"showTotalAggregate":false,"showSubAggregate":false,"showFirstGroupAggregate":false,"showSecondGroupAggregate":false,"hideMatrixAggregate":false,"lineClamp":1,"headerTitleAlignment":"center","wrapTitle":false,"showLoadingIndicator":false,"showHeaderSeparator":false,"contextMenuActions":[],"headerTitle":"State","headingLevel":2,"showBorder":true,"bareBorder":false,"telemetry":null,"showDataPassthrough":false,"showAdditionalGroupBySelector":false,"allowAdditionalGroupByPerMetric":true,"metrics":[{"dataSource":"dGFibGV4XzE1NTg0MDJfc21hcnRfMF9zdXBwb3J0X2Nhc2UxNzgwMjE4NDQxODA5","id":"ZEdGaWJHVjRYekUxTlRnME1ESmZjMjFoY25SZk1GOXpkWEJ3YjNKMFgyTmhjMlV4Tnpnd01qRTRORFF4T0RBNTE3ODAyMTg0NDQ1OTM=","aggregateFunction":"COUNT","numberFormat":{"customFormat":false},"axisId":"primary"}],"groupBy":[{"groupBy":[{"dataSource":"dGFibGV4XzE1NTg0MDJfc21hcnRfMF9zdXBwb3J0X2Nhc2UxNzgwMjE4NDQxODA5","groupByField":"state","metric":"ZEdGaWJHVjRYekUxTlRnME1ESmZjMjFoY25SZk1GOXpkWEJ3YjNKMFgyTmhjMlV4Tnpnd01qRTRORFF4T0RBNTE3ODAyMTg0NDQ1OTM=","isRange":false,"isChoice":true,"isPaBucket":false}],"maxNumberOfGroups":"ALL","numberOfGroupsBasedOn":"NO_OF_GROUP_BASED_ON_PER_METRIC","showOthers":false,"hideZeroValues":false,"disableRanges":false}],"filterPerMetric":[],"headerColor":{"themeVariable":"--now-color_alert--critical-0","value":"#f8c8cd"},"sortBy":"value","sortByOrder":"desc","trendBy":{"trendByFrequency":"date","trendByMinuteInterval":null,"trendByFields":[{"field":"sys_created_on","metric":"ZEdGaWJHVjRYekUxTlRnME1ESmZjMjFoY25SZk1GOXpkWEJ3YjNKMFgyTmhjMlV4Tnpnd01qRTRORFF4T0RBNTE3ODAyMTg0NDQ1OTM="}]},"showChange":null,"showChangePercentage":null,"showTarget":false,"showForecast":false,"showForecastRange":false,"showTrend":false,"showConfidenceBand":false,"showGapPercentage":null,"showSparkline":null,"showMetricLabel":null,"showThreshold":false,"showComment":false,"showTotalValue":null,"followFilters":true,"showFilterIcon":true,"enableRealTimeUpdate":null,"enableDrilldown":true,"enableClickAndStay":false,"showDataTable":false,"enableCustomEmptyState":false,"componentId":"7g0o76qf","emptyStateIllustration":"no-data","emptyStateHeading":"No data available.","emptyStateHeadingLevel":3,"emptyStateContent":"There are no scores available for the selected criteria. Contact your admin for more info.","emptyStateAlignment":"vertical-centered","refreshFrequency":null,"hideDevSettings":false,"configPropModifiers":{},"filterConfigurations":"@state.parFilters","showMaximumRange":false,"allowChangeDateRange":false,"applyDateRange":false,"numberOfPeriods":3,"showAbsolutePeriod":false,"autoAggregatePeriods":false,"scoreType":"latest","showChangeFrom":null,"startTime":null,"endTime":null,"useCurrentDateForEnd":false,"period":null,"useDataCache":false,"cacheExpirationTime":0,"showCacheTime":true,"dateFormat":"default","showRefresh":true,"showExportOptions":true,"showFilterAsSeparateSeries":false,"userInfo":"@context.session.user","colors":{}}</component_props>
+        <h>13</h>
+        <name/>
+        <required_translations>[{"comment":"","message":"Case","code":"PAR_DASHBOARD.49b9b9c593414b10c34733ddfaba10c4.d83bd2b3938dcf50c34733ddfaba10f0"},{"comment":"","message":"State","code":"PAR_DASHBOARD.49b9b9c593414b10c34733ddfaba10c4.d83bd2b3938dcf50c34733ddfaba10f0"},{"comment":"","message":"No data available.","code":"PAR_DASHBOARD.49b9b9c593414b10c34733ddfaba10c4.d83bd2b3938dcf50c34733ddfaba10f0"},{"comment":"","message":"There are no scores available for the selected criteria. Contact your admin for more info.","code":"PAR_DASHBOARD.49b9b9c593414b10c34733ddfaba10c4.d83bd2b3938dcf50c34733ddfaba10f0"}]</required_translations>
+        <stored_component/>
+        <sys_class_name>par_dashboard_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-31 09:10:21</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>d83bd2b3938dcf50c34733ddfaba10f0</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="Smart Support" source="x_1558402_smart_0">1d70a04893410310c34733ddfaba106e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Smart Support">1d70a04893410310c34733ddfaba106e</sys_scope>
+        <sys_update_name>par_dashboard_widget_d83bd2b3938dcf50c34733ddfaba10f0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-31 09:41:49</sys_updated_on>
+        <visualization/>
+        <w>43</w>
+        <widget_props/>
+        <x>1</x>
+        <y>0</y>
+    </par_dashboard_widget>
+</record_update>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" audit="true" db_object_id="4e984a54934d8310c34733ddfaba102f" extends="task" label="Task" max_length="40" name="sn_customerservice_task" type="collection">
+        <element label="Smart Support Case" max_length="32" name="x_1558402_smart_0_smart_support_case" reference="x_1558402_smart_0_support_case" type="reference"/>
+    </element>
+</database>

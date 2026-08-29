@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="afcb67f793090390c34733ddfaba1034" extends="sys_import_set_row" label="Imp Tmpl X 1558402 Smart 0 Support Case" max_length="40" name="u_imp_tmpl_x_1558402_smart_0_support_case" type="collection">
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Customer" label="Customer" max_length="32" name="u_customer" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Description" label="Description" max_length="200" name="u_description" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Sys ID" label="Sys ID" max_length="40" name="u_sys_id" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=State" label="State" max_length="40" name="u_state" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Asset" label="Asset" max_length="32" name="u_asset" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Case Number" label="Case Number" max_length="40" name="u_case_number" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Priority" label="Priority" max_length="40" name="u_priority" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=External Event ID" label="External Event ID" max_length="40" name="u_external_event_id" type="string"/>
+    </element>
+</database>

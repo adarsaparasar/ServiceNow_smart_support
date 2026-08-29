@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_form_sections form_id="846a787493098710c34733ddfaba1090" sys_domain="global" table="x_1558402_smart_0_supportcustomer" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-05-21 18:25:35</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>cc6a787493098710c34733ddfaba1096</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_1558402_smart_0_supportcustomer" name="x_1558402_smart_0_supportcustomer" sys_domain="global" view="Default view">846a787493098710c34733ddfaba1090</sys_ui_form>
+            <sys_ui_section caption="Customer" display_value="Customer" name="x_1558402_smart_0_supportcustomer" sys_domain="global" view="Default view">0635e08c93410310c34733ddfaba1057</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-05-21 18:27:46</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>x_1558402_smart_0_supportcustomer</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-05-21 18:25:35</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>846a787493098710c34733ddfaba1090</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_1558402_smart_0_supportcustomer</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Smart Support" source="x_1558402_smart_0">1d70a04893410310c34733ddfaba106e</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Smart Support">1d70a04893410310c34733ddfaba106e</sys_scope>
+            <sys_update_name>sys_ui_form_sections_846a787493098710c34733ddfaba1090</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-05-21 18:25:35</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>
